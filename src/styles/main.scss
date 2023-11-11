@@ -7,6 +7,8 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 body {
   background-color: rgb(6, 6, 32);
@@ -32,7 +34,7 @@ body {
       .logo-text {
         a {
           font-size: 2.4rem;
-          font-family: tahoma;
+          font-family: "baumans";
           font-weight: 600;
           background: linear-gradient(
             to right,
@@ -81,6 +83,291 @@ body {
 }
 
 //header styling ends here
+
+//hero styling starts here
+.hero {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(13, 98, 202, 0.2), rgba(203, 225, 8, 0.2)),
+    url(../../public/assets/bg-image.png);
+  background-position: center;
+  background-size: cover;
+  object-fit: fill;
+
+  .center {
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    .hero-text {
+      padding: 2rem 0;
+      font-size: 3.7rem;
+      font-family: verdana;
+      letter-spacing: 0.4rem;
+      text-shadow: 0.1rem 0.25rem rgba(91, 234, 75, 0.683);
+      background: linear-gradient(
+        to right,
+        rgb(244, 16, 16),
+        rgb(192, 232, 13)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .img-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(-50px);
+      padding: 0 0.6rem;
+      width: 460px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+//hero tyling ends here
+
+//menu styling starts here
+.menu {
+  width: 100%;
+  padding: 2rem;
+  .wrapper {
+    padding: 2rem 0;
+    .section-heading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      .section-title {
+        padding: 0.5rem;
+        font-size: 2.7rem;
+        font-family: tahoma;
+        background: linear-gradient(
+          to right,
+          rgb(244, 16, 16),
+          rgb(13, 64, 232)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 1rem;
+      padding-top: 1rem;
+
+      .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #aaa;
+        padding: 0.6rem;
+        border-radius: 1.5rem;
+        flex-direction: column;
+
+        h1 {
+          padding: 0.7rem;
+          text-align: center;
+        }
+        .card {
+          padding-top: 1rem;
+          img {
+            width: 100%;
+            padding: 0.5rem;
+            cursor: pointer;
+            transition: all 0.5s ease;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//menu styling ends here
+
+//specials styling starts here
+.specials {
+  margin-top: 3rem;
+  padding: 2rem 2rem;
+
+  width: 100%;
+
+  .wrapper {
+    padding: 2rem 0;
+    .section-heading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      .section-title {
+        padding: 0.5rem;
+        font-size: 2.7rem;
+        font-family: tahoma;
+        background: linear-gradient(
+          to right,
+          rgb(244, 16, 16),
+          rgb(13, 64, 232)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      padding-top: 1rem;
+
+      .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #aaa;
+        padding: 0.6rem;
+        border-radius: 1.5rem;
+        flex-direction: column;
+
+        h1 {
+          padding: 0.7rem;
+          text-align: center;
+        }
+        .card {
+          padding-top: 1rem;
+          img {
+            width: 100%;
+            padding: 0.5rem;
+            cursor: pointer;
+            transition: all 0.5s ease;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//specials styling ends here
+
+//latest styling starts here
+.latest {
+  margin-top: 3rem;
+  padding: 2rem 2rem;
+  width: 100%;
+
+  .wrapper {
+    padding: 2rem 0;
+    .section-heading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      .section-title {
+        padding: 0.5rem;
+        font-size: 2.7rem;
+        font-family: tahoma;
+        background: linear-gradient(
+          to right,
+          rgb(244, 16, 16),
+          rgb(13, 64, 232)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      padding-top: 1rem;
+
+      .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #aaa;
+        padding: 0.6rem;
+        border-radius: 1.5rem;
+        flex-direction: column;
+
+        h1 {
+          padding: 0.7rem;
+          text-align: center;
+        }
+        .card {
+          padding-top: 1rem;
+          img {
+            width: 100%;
+            transition: all 0.5s ease-in-out;
+            padding: 0.5rem;
+            cursor: pointer;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//latest styling ends here
+
+//footer styling starts here
+.footer {
+  text-align: center;
+  padding: 0.8rem 1.2rem;
+  .copy-right {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #ccc;
+    font-family: monospace;
+    padding: 0.6rem 0;
+  }
+  .social-text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: tahoma;
+    color: #ccc;
+    padding: 0.5rem 0;
+  }
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    a {
+      text-decoration: none;
+      outline: none;
+      border: none;
+      cursor: pointer;
+
+      img {
+        width: 4rem;
+        padding: 0.4rem 0.2rem;
+
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+}
+//footer styling ends here
 
 // MEDIA QUERIES -- common break points 480px, 768px, 1024px, 1280px
 
