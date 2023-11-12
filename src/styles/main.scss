@@ -137,6 +137,7 @@ body {
 .menu {
   width: 100%;
   padding: 2rem;
+  margin-top: 2rem;
   .wrapper {
     padding: 2rem 0;
     .section-heading {
@@ -198,9 +199,8 @@ body {
 
 //specials styling starts here
 .specials {
-  margin-top: 3rem;
-  padding: 2rem 2rem;
-
+  margin-top: 2rem;
+  padding: 2rem;
   width: 100%;
 
   .wrapper {
@@ -264,8 +264,8 @@ body {
 
 //latest styling starts here
 .latest {
-  margin-top: 3rem;
-  padding: 2rem 2rem;
+  margin-top: 2rem;
+  padding: 2rem;
   width: 100%;
 
   .wrapper {
@@ -327,15 +327,189 @@ body {
 }
 //latest styling ends here
 
+//Reviews styling starts here
+.reviews {
+  padding: 2rem;
+  margin-top: 2rem;
+
+  .wrapper {
+    padding: 2rem 0;
+
+    .review-heading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .review-heading-text {
+        padding: 0.5rem;
+        font-size: 2.7rem;
+        font-family: tahoma;
+        background: linear-gradient(
+          to right,
+          rgb(244, 16, 16),
+          rgb(13, 64, 232)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    .review-flex {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.3rem;
+      padding-top: 1rem;
+      .review {
+        border: 0.1rem solid #aaa;
+
+        .top-pane {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .profile-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem 1rem;
+            img {
+              width: 80px;
+              height: 83px;
+              padding: 0.8rem;
+              border-radius: 50%;
+            }
+          }
+          .profile-name {
+            .reviewer-name {
+              font-size: 1.6rem;
+              font-weight: 500;
+              color: aqua;
+              font-family: verdana;
+            }
+          }
+        }
+
+        .bottom-pane {
+          padding: 0.7rem;
+          .review-content {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #ccc;
+            font-family: tahoma;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+  }
+}
+//Reviews styling ends here
+
+//Contact us styling starts here
+.contact {
+  padding: 2rem;
+  margin-top: 2rem;
+
+  .wrapper {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .contact-heading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .sub-text {
+        font-size: 1.6rem;
+        padding: 1rem 0.6rem;
+        color: #ccc;
+        font-weight: 500;
+      }
+
+      .contact-heading-text {
+        padding: 0.5rem;
+        font-size: 2.7rem;
+        font-family: tahoma;
+        background: linear-gradient(
+          to right,
+          rgb(244, 16, 16),
+          rgb(13, 64, 232)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    .contact-form {
+      padding: 0.7rem 0;
+      .form-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .input-area {
+          width: 100%;
+          .form-controll {
+            margin: 0.6rem 0;
+            width: 100%;
+            background: transparent;
+            outline: none;
+            border: 1px solid #aaa;
+            padding: 1rem;
+            color: #fff;
+            font-size: 1.7rem;
+
+            &:focus {
+              border: 1.5px solid blue;
+            }
+          }
+        }
+      }
+
+      .submit-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.6rem;
+        .btn {
+          padding: 0.8rem 1rem;
+          background: blue;
+          border-radius: 1.9rem;
+          outline: none;
+          border: none;
+          font-size: 1.5rem;
+          cursor: pointer;
+          font-weight: 600;
+          color: #ccc;
+          width: 130px;
+          text-transform: capitalize;
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            transform: translateY(-10px);
+            background-color: rgb(17, 142, 243);
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+//contact us styling ends here
+
 //footer styling starts here
 .footer {
   text-align: center;
   padding: 0.8rem 1.2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   .copy-right {
     font-size: 1.6rem;
     font-weight: 400;
     color: #ccc;
-    font-family: monospace;
+    font-family: sans-serif;
     padding: 0.6rem 0;
   }
   .social-text {
