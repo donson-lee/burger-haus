@@ -1,4 +1,10 @@
 import "./styles/main.scss";
+import "./styles/header.scss";
+import "./styles/hero.scss";
+import "./styles/menu.scss";
+import "./styles/specials.scss";
+import "./styles/latest.scss";
+import "./styles/review.scss";
 
 const hamburger = document.querySelector(".icons .fa-bars");
 const navBar = document.querySelector(".navbar");

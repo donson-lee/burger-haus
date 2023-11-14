@@ -1,0 +1,89 @@
+//Reviews styling starts here
+.reviews {
+  padding: 2rem;
+  margin-top: 2rem;
+
+  .wrapper {
+    padding: 2rem 0;
+
+    .review-heading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .review-heading-text {
+        padding-bottom: 1rem;
+        font-size: 2.7rem;
+        font-family: tahoma;
+        background: linear-gradient(
+          to right,
+          rgb(244, 16, 16),
+          rgb(13, 64, 232)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    .review-flex {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1.3rem;
+      padding-top: 1rem;
+      .review {
+        border: 0.1rem solid #aaa;
+
+        .top-pane {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0.5rem;
+          .profile-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem 1rem;
+            img {
+              width: 120px;
+              height: 123px;
+              padding: 0.8rem;
+              border-radius: 50%;
+            }
+          }
+          .profile-name {
+            .reviewer-name {
+              font-size: 1.3rem;
+              font-weight: 500;
+              color: aqua;
+              font-family: verdana;
+            }
+          }
+        }
+
+        .bottom-pane {
+          padding: 0.7rem;
+          .review-content {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #ccc;
+            font-family: tahoma;
+            line-height: 1.4;
+          }
+          .ratings {
+            text-align: center;
+            padding: 0.6rem 0;
+            color: orange;
+            font-size: 1.3rem;
+            font-family: verdana;
+
+            span {
+              color: lightgreen;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//Reviews styling ends here
