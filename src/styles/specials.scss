@@ -78,13 +78,22 @@
 }
 
 // MEDIA QUERIES -- common break points 480px, 768px, 1024px, 1280px
-
+// 1500px break point
+@media screen and (max-width: 1500px) {
+  .specials {
+    .wrapper {
+      .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+    }
+  }
+}
 // 1024px break point
 @media screen and (max-width: 1280px) {
   .specials {
     .wrapper {
       .card-container {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
       }
     }
   }

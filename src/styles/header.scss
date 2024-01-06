@@ -70,6 +70,29 @@
 // MEDIA QUERIES -- common break points 480px, 768px, 1024px, 1280px
 
 // 1024px break point
+@media screen and (max-width: 1500px) {
+  .header {
+    .nav-container {
+      margin: 0 12.5rem;
+
+      .logo-pane {
+        .logo-text {
+          a {
+            font-size: 2.8rem;
+          }
+        }
+      }
+
+      .navbar {
+        a {
+          font-size: 1.9rem;
+        }
+      }
+    }
+  }
+}
+
+// 1024px break point
 @media screen and (max-width: 1280px) {
   .header {
     .nav-container {
